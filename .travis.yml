@@ -14,7 +14,7 @@ after_success:
   - docker buid -t phucpham/multi-server ./server
   - docker buid -t phucpham/multi-worker ./worker
 
-# Log in to the docker CLI
+# Log in to the docker CLI 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # Take those images and push to docker hub
