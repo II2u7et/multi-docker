@@ -3,14 +3,14 @@
     "containerDefinitions": [
         {
             "name": "client",
-            "image": "phucpham/multi-client",
+            "image": "phhongphuc/multi-client",
             "hostname": "client",
             "essential": false,
             "memory": 128
         },
         {
             "name": "nginx",
-            "image": "phucpham/multi-nginx",
+            "image": "phhongphuc/multi-nginx",
             "hostname": "nginx",
             "essential": true,
             "portMappings": [
@@ -24,14 +24,14 @@
         },
         {
             "name": "server",
-            "image": "phucpham/multi-server",
+            "image": "phhongphuc/multi-server",
             "hostname": "api",
             "essential": false,
             "memory": 128
         },
         {
             "name": "worker",
-            "image": "phucpham/multi-worker",
+            "image": "phhongphuc/multi-worker",
             "hostname": "worker",
             "essential": false,
             "memory": 128
